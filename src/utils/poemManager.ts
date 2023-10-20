@@ -25,3 +25,13 @@ export const deletePoem = (id: string): void => {
     const updatedPoems = poems.filter(poem => poem.id !== id);
     localStorage.setItem('poems', JSON.stringify(updatedPoems));
 };
+
+export const exportPoemAsTxt = (poem: Poem): void => {
+    const element = document.createElement("a");
+    const file = new Blob([poem.content], {type: 'text/plain'});
+    element.href = URL.createObjectURL(file);
+    element.download = `${poem.title}.txt`;
+    document.body.appendChild(element);
+    element.click();
+}
+

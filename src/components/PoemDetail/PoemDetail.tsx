@@ -1,11 +1,19 @@
+import { exportPoemAsTxt } from '../../utils/poemManager';
+import { PoemItemProps } from '../../models/Poem'
 import './PoemDetail.scss'
-function PoemDetail() {
+
+function PoemDetail({ poem }: PoemItemProps) {
+  const handleExport = () => {
+    exportPoemAsTxt(poem);
+  };
+
   return (
     <div>
-      <h1>Título del Poema</h1>
-      <p>Texto completo del poema...</p>
+      <h1>{poem.title}</h1>
+      <p>{poem.content}</p>
+      <button onClick={handleExport}>Exportar como TXT</button>
     </div>
   );
 }
 
-export default PoemDetail;
+export default PoemDetail

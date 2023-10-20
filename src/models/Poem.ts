@@ -3,3 +3,7 @@ export type Poem = {
     title: string;
     content: string;
 };
+
+export interface PoemItemProps {
+    poem: Poem;
+}
