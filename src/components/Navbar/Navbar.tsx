@@ -3,13 +3,13 @@ import './Navbar.scss'
 
 function Navbar() {
   return (
-    <div>
+    <nav className="navbar">
       <h1>Poemas</h1>
-      <Link to="/">Inicio</Link>
-      <Link to="/create">Crear Poema</Link>
-      {/* Agrega más enlaces según lo necesario */}
-    </div>
+      <div className="links">
+        <Link to="/">Inicio</Link>
+        <Link to="/create">Crear Poema</Link>
+      </div>
+    </nav>
   );
 }
-
 export default Navbar;

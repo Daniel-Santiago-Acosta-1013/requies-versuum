@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { addPoem } from '../utils/poemManager';
 import { v4 as uuidv4 } from 'uuid';
 import RichTextEditor from '../components/RichTextEditor/RichTextEditor';
+import '../styles/forms.scss';
+
 
 
 function CreatePoem() {
