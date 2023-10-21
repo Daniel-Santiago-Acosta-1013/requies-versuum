@@ -1,0 +1,14 @@
+div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    .ql-toolbar {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .ql-container {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
