@@ -10,7 +10,7 @@ function PoemItem({ poem }: PoemItemProps) {
   };
 
   return (
-    <div>
+    <div className='poemItem-container'>
       <h2>{poem.title}</h2>
       <p>{poem.content.slice(0, 100)}...</p>
       <Link to={`/edit/${poem.id}`}>Editar</Link>

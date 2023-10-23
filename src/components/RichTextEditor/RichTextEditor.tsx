@@ -9,7 +9,9 @@ type RichTextEditorProps = {
 
 function RichTextEditor({ content, setContent }: RichTextEditorProps) {
   return (
-    <ReactQuill value={content} onChange={setContent} />
+    <div className='richTextEditor-container'>
+      <ReactQuill value={content} onChange={setContent} />
+    </div>
   );
 }
 

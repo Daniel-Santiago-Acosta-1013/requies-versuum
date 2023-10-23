@@ -1,8 +1,8 @@
 .edit-container {
     padding: 20px;
-    
+
     h1 {
-        margin-bottom: 20px; // Añadimos espacio
+        margin-bottom: 20px;
     }
 
     input {
@@ -10,11 +10,14 @@
         margin-bottom: 10px;
         width: 100%;
         border: 2px solid #e6e6e6;
-        border-radius: 7px;  // Bordes más redondeados
-        font-size: 16px;  // Ajustamos el tamaño del texto
+        border-radius: 7px;
+        font-size: 16px;
+        transition: border-color 0.3s;
 
         &:focus {
-            border-color: #007BFF;  // Cambiamos el color del borde al enfocar
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
         }
     }
 }

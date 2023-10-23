@@ -2,7 +2,7 @@ import './Filter.scss'
 
 function Filter() {
   return (
-    <div>
+    <div className='filter'>
       {/* Implementar filtros aquí */}
     </div>
   );

@@ -1,21 +1,18 @@
-.poem-item {
+.poemItem-container {
     padding: 20px;
-    background: #ffffff;
-    margin-bottom: 15px;
+    border: 1px solid #ccc;  // Borde para las tarjetas
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);  // Sombra al pasar el cursor
+    }
 
     h2 {
         margin-top: 0;
-        font-weight: 500; // Ajustamos el grosor de la fuente
     }
 
-    p {
-        color: #7a7a7a; // Ajustamos el color del texto
-    }
-
-    a,
     button {
-        margin-top: 20px; // Ajustamos el margen
+        margin-top: 10px;
     }
 }

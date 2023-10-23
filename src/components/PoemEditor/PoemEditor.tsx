@@ -3,7 +3,7 @@ import './PoemEditor.scss'
 
 function PoemEditor() {
   return (
-    <div>
+    <div className='poem-editor-container'>
       <h1>Editor</h1>
       <RichTextEditor />
     </div>

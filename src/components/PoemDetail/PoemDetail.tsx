@@ -8,7 +8,7 @@ function PoemDetail({ poem }: PoemItemProps) {
   };
 
   return (
-    <div>
+    <div className='poemDetail-container'>
       <h1>{poem.title}</h1>
       <p>{poem.content}</p>
       <button onClick={handleExport}>Exportar como TXT</button>

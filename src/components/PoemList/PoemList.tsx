@@ -10,10 +10,11 @@ function PoemList() {
 
   return (
     <>
-      {poems.map(poem => (
-        <PoemItem key={poem.title} poem={poem} />
-      ))}
-    
+      <div className='poemList-container'>
+        {poems.map(poem => (
+          <PoemItem key={poem.title} poem={poem} />
+        ))}
+      </div>
     </>
   );
 }
