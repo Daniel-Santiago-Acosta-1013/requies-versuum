@@ -6,7 +6,7 @@ import './PoemItem.scss';
 function PoemItem({ poem }: PoemItemProps) {
   const handleDelete = () => {
     deletePoem(poem.id);
-    // Actualizar UI o redireccionar
+    window.location.reload();
   };
 
   return (

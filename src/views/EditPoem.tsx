@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { getPoems, editPoem } from '../utils/poemManager';
 import RichTextEditor from '../components/RichTextEditor/RichTextEditor';
 import { useState } from 'react';
@@ -10,6 +10,8 @@ function EditPoem() {
   const [title, setTitle] = useState(poemToEdit?.title || '');
   const [content, setContent] = useState(poemToEdit?.content || '');
 
+  const navigate = useNavigate();
+
   const handleUpdate = () => {
     const updatedPoem = {
       id,
@@ -17,7 +19,7 @@ function EditPoem() {
       content
     };
     editPoem(updatedPoem);
-    // Redireccionar o actualizar UI
+    navigate('/');
   };
 
   return (

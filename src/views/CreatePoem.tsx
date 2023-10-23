@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { addPoem } from '../utils/poemManager';
 import { v4 as uuidv4 } from 'uuid';
 import RichTextEditor from '../components/RichTextEditor/RichTextEditor';
@@ -6,6 +7,7 @@ import RichTextEditor from '../components/RichTextEditor/RichTextEditor';
 function CreatePoem() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
     const newPoem = {
@@ -14,7 +16,7 @@ function CreatePoem() {
       content
     };
     addPoem(newPoem);
-    // Redireccionar o actualizar UI
+    navigate('/');
   };
 
   return (
