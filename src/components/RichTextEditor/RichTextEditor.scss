@@ -1,15 +1,17 @@
 .richTextEditor-container {
-    border: none;  // Quitamos los bordes
+    border: none;
     border-radius: 5px;
 
     .ql-toolbar {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        background-color: #2d2d36;
     }
 
     .ql-container {
         height: 250px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+        background-color: #1b1b2f;
     }
 }

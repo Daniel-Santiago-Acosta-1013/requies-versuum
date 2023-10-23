@@ -1,9 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;  // Cambiamos la fuente por Roboto que es moderna y amigable
-    background: #f9f9f9;  // Un color más claro
+    font-family: 'Roboto', sans-serif;
+    background: #1b1b2f;  // Cambiamos el fondo al color especificado
     margin: 0;
     padding: 0;
-    color: #4a4a4a;  // Un color gris oscuro para el texto
+    color: #ffffff;  // Color blanco para el texto
     line-height: 1.6;
 }
 
@@ -16,12 +16,13 @@ button {
     padding: 10px 25px;
     border: none;
     border-radius: 7px;
-    background-color: #007BFF;  // Cambiamos el color principal
+    background-color: #6e5494;  // Color principal de GitHub
     color: #ffffff;
     cursor: pointer;
-    transition: background 0.3s;  // Añadimos una transición
+    transition: background 0.3s;
+    margin-top: 10px;
 
     &:hover {
-        background-color: #0056b3;  // Oscurecemos el color al hacer hover
+        background-color: #563d7c;  
     }
 }

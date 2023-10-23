@@ -21,7 +21,7 @@ function CreatePoem() {
   };
 
   return (
-    <div>
+    <div className="create-container">
       <h1>Crear Nuevo Poema</h1>
       <input value={title} onChange={e => setTitle(e.target.value)} placeholder="Título" />
       <RichTextEditor content={content} setContent={setContent} />

@@ -3,7 +3,7 @@ import '../styles/Home.scss'
 
 function Home() {
   return (
-    <div className="content-container">
+    <div className="home-container">
       <h1>Listado de Poemas</h1>
       <PoemList />
     </div>

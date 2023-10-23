@@ -24,7 +24,7 @@ function EditPoem() {
   };
 
   return (
-    <div>
+    <div className="edit-container">
       <h1>Editar Poema</h1>
       <input value={title} onChange={e => setTitle(e.target.value)} placeholder="Título" />
       <RichTextEditor content={content} setContent={setContent} />
