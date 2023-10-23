@@ -1,5 +1,5 @@
 import PoemList from '../components/PoemList/PoemList';
-import '../styles/global.scss'
+import '../styles/Home.scss'
 
 function Home() {
   return (
