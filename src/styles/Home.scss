@@ -1,3 +1,6 @@
 .content-container {
-    padding: 20px;
+    padding: 40px 20px;  // Añadimos más padding
+    background-color: #ffffff;  // Fondo blanco para destacar
+    border-radius: 8px;  // Bordes redondeados
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);  // Sombra sutil
 }

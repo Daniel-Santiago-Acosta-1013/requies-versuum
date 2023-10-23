@@ -1,27 +1,27 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f2f2f2;
+    font-family: 'Roboto', sans-serif;  // Cambiamos la fuente por Roboto que es moderna y amigable
+    background: #f9f9f9;  // Un color más claro
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #4a4a4a;  // Un color gris oscuro para el texto
     line-height: 1.6;
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: none;
-    border-radius: 5px;
-    background-color: #2f3d4a;
+    border-radius: 7px;
+    background-color: #007BFF;  // Cambiamos el color principal
     color: #ffffff;
     cursor: pointer;
+    transition: background 0.3s;  // Añadimos una transición
 
     &:hover {
-        background-color: #25323a;
+        background-color: #0056b3;  // Oscurecemos el color al hacer hover
     }
 }

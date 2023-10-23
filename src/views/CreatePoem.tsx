@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { addPoem } from '../utils/poemManager';
 import { v4 as uuidv4 } from 'uuid';
 import RichTextEditor from '../components/RichTextEditor/RichTextEditor';
+import '../styles/CreatePoem.scss'
 
 function CreatePoem() {
   const [title, setTitle] = useState('');

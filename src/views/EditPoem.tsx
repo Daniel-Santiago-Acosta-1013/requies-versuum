@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getPoems, editPoem } from '../utils/poemManager';
 import RichTextEditor from '../components/RichTextEditor/RichTextEditor';
 import { useState } from 'react';
+import '../styles/EditPoem.scss'
 
 function EditPoem() {
   const { id } = useParams();
