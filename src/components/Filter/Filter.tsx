@@ -1,9 +1,10 @@
+import { FilterProps } from '../../models/Poem'
 import './Filter.scss'
 
-function Filter() {
+function Filter({ filter, setFilter }: FilterProps) {
   return (
     <div className='filter'>
-      {/* Implementar filtros aquí */}
+      <input className="filter-input" value={filter} onChange={e => setFilter(e.target.value)} placeholder="Buscar..." />
     </div>
   );
 }

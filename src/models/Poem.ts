@@ -7,3 +7,8 @@ export type Poem = {
 export interface PoemItemProps {
     poem: Poem;
 }
+
+export type FilterProps = {
+    filter: string;
+    setFilter: (filter: string) => void;
+};
