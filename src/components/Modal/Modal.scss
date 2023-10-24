@@ -8,14 +8,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9999;
 }
 
 .modal-container {
   background-color: #2d2d36;
   padding: 20px;
   border-radius: 8px;
-  width: 60%;
+  width: 80%;
   max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  // Estilos para personalizar la scrollbar
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #3a3a48; // Puedes ajustar este color
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #6e5494;
+    border-radius: 4px;al
+    &:hover {
+      background-color: #563d7c;
+    }
+  }
 }
 
 .modal-header {
@@ -40,5 +60,11 @@ button {
 
   &:hover {
     background-color: #563d7c;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-container {
+    width: 95%;
   }
 }
