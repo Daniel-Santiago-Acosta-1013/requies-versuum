@@ -5,8 +5,8 @@ function CustomModal({ isOpen, onClose, title, children }: ModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-container">
+    <div className={`modal-overlay ${isOpen ? 'active' : ''}`}>
+      <div className={`modal-container ${isOpen ? 'active' : ''}`}>
         {title && <div className="modal-header">{title}</div>}
         <div className="modal-content">{children}</div>
         <div className="modal-footer">
