@@ -4,6 +4,9 @@ import { PoemItemProps } from '../../models/Poem';
 import './PoemItem.scss';
 
 function PoemItem({ poem }: PoemItemProps) {
+
+  const contentPreview = poem.content.slice(0, 100);
+
   const handleDelete = () => {
     deletePoem(poem.id);
     window.location.reload();
@@ -12,7 +15,10 @@ function PoemItem({ poem }: PoemItemProps) {
   return (
     <div className='poemItem-container'>
       <h2>{poem.title}</h2>
-      <p>{poem.content.slice(0, 100)}...</p>
+      <div
+        className="poem-content-preview"
+        dangerouslySetInnerHTML={{ __html: contentPreview + "..." }}
+      ></div>
       <Link to={`/edit/${poem.id}`}>Editar</Link>
       <button onClick={handleDelete}>Eliminar</button>
     </div>

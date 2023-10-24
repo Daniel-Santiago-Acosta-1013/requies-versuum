@@ -1,14 +1,17 @@
 .create-container {
     padding: 20px;
+    max-width: 800px;  // Puedes ajustar según tus necesidades
+    margin: 0 auto;   // Centra el contenedor en la pantalla
 
     h1 {
         margin-bottom: 20px;
     }
 
     input {
+        box-sizing: border-box; // Asegura que el padding y el borde estén incluidos en el ancho
         padding: 10px;
         margin-bottom: 10px;
-        width: 98%;
+        width: 100%;            // Ocupará todo el ancho disponible
         border: 2px solid #6e5494;
         border-radius: 7px;
         font-size: 16px;
@@ -26,25 +29,4 @@
             box-shadow: 0 0 8px rgba(110, 84, 148, 0.5);
         }
     }
-
-    @media (max-width: 430px) {
-        input { 
-            width: 93% !important;
-        }
-    }
-
-    @media (max-width: 720px) {
-        input { 
-            width: 93%;
-        }
-    }
-
-    @media (max-width: 1920px) {
-        input { 
-            width: 95%;
-        }
-    }
-
-    
-
 }
