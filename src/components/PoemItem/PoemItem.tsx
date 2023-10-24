@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { deletePoem } from '../../utils/poemManager';
 import { PoemItemProps } from '../../models/Poem';
+import Modal from '../Modal/Modal';
 import './PoemItem.scss';
 import { useState } from 'react';
 
@@ -23,28 +24,24 @@ function PoemItem({ poem }: PoemItemProps) {
   }
 
   return (
-    <div className='poemItem-container' onClick={handleOpenModal}>
-      <h2>{poem.title}</h2>
-      <div
-        className="poem-content-preview"
-        dangerouslySetInnerHTML={{ __html: contentPreview + "..." }}
-      ></div>
-      <Link to={`/edit/${poem.id}`}>Editar</Link>
-      <button onClick={handleDelete}>Eliminar</button>
+    <>
+      <div className='poemItem-container' onClick={handleOpenModal}>
+        <h2>{poem.title}</h2>
+        <div
+          className="poem-content-preview"
+          dangerouslySetInnerHTML={{ __html: contentPreview + "..." }}
+        ></div>
+        <Link to={`/edit/${poem.id}`}>Editar</Link>
+        <button onClick={handleDelete}>Eliminar</button>
+      </div>
 
-      {showModal && (
-        <div className="modal visible" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close-btn" onClick={handleCloseModal}>&times;</span>
-            <h2>{poem.title}</h2>
-            <div
-              dangerouslySetInnerHTML={{ __html: poem.content }}
-            ></div>
-          </div>
-        </div>
-      )}
+      <Modal isOpen={showModal} onClose={handleCloseModal} title={poem.title}>
+        <div
+          dangerouslySetInnerHTML={{ __html: poem.content }}
+        ></div>
+      </Modal>
 
-    </div>
+    </>
   );
 }
 
