@@ -1,7 +1,32 @@
 .home-container {
     padding: 40px 20px;
-    background-color: #2d2d36;  // Un color más oscuro para contraste
+    background-color: #2d2d36;
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0,0,0,0.2);
     margin-top: 15px;
+
+    .create-poem-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        border: 2px dashed #6e5494;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: #aaa;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+        }
+    }
 }
