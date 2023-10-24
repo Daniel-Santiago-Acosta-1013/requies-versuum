@@ -4,11 +4,16 @@ export type Poem = {
     content: string;
 };
 
-export interface PoemItemProps {
-    poem: Poem;
-}
-
 export type FilterProps = {
     filter: string;
     setFilter: (filter: string) => void;
 };
+
+export type RichTextEditorProps = {
+    content?: string;
+    setContent?: (content: string) => void;
+};
+
+export interface PoemItemProps {
+    poem: Poem;
+}
