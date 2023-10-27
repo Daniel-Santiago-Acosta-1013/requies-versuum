@@ -7,6 +7,15 @@
         border-top-right-radius: 5px;
         background-color: #2d2d36;
         font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        button, select {
+            margin: 5px 2px;
+            align-items: center;
+        }
     }
 
     .ql-container {
