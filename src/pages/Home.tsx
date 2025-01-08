@@ -28,7 +28,7 @@ export const Home = () => {
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h1 className="text-4xl font-serif mb-4 text-[#4a3c2d] dark:text-github-default-dark">
-          Versos del Alma
+          Requies versuum
         </h1>
         <p className="text-lg text-[#5c4b37] dark:text-github-default-dark/90">
           Poemas por Daniel Santiago Acosta Galindo

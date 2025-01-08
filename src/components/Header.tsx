@@ -8,7 +8,7 @@ export const Header = () => {
       <nav className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2 text-github-default dark:text-github-default-dark hover:text-github-accent dark:hover:text-github-accent-dark">
           <Feather className="w-6 h-6" />
-          <span className="text-xl font-serif">Versos del Alma</span>
+          <span className="text-xl font-serif">Requies versuum</span>
         </Link>
         <div className="flex items-center space-x-6">
           <div className="font-serif">
