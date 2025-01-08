@@ -1,27 +1,25 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from 'react-router-dom';
-import Home from './views/Home';
-import CreatePoem from './views/CreatePoem';
-import EditPoem from './views/EditPoem';
-import Navbar from './components/Navbar/Navbar';
-import './styles/global.scss';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header } from './components/Header';
+import { Home } from './pages/Home';
+import { Poems } from './pages/Poems';
+import { PoemDetail } from './pages/PoemDetail';
+import { LottieBackground } from './components/LottieBackground';
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <Navbar />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/create" element={<CreatePoem />} />
-          <Route path="/edit/:id" element={<EditPoem />} />
-        </Routes>
+      <div className="min-h-screen bg-[#f4efe4] dark:bg-[#161b22] transition-colors relative">
+        <LottieBackground />
+        <Header />
+        <main className="relative z-10">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/poems" element={<Poems />} />
+            <Route path="/poem/:id" element={<PoemDetail />} />
+          </Routes>
+        </main>
       </div>
     </Router>
   );
 }
-
-export default App;
