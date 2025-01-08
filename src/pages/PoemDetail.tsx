@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Tag, User, Share2, Download } from 'lucide-react';
 import { poems } from '../data/poems';
@@ -75,7 +74,6 @@ export const PoemDetail = () => {
       });
 
       const imgWidth = 210;
-      const pageHeight = 297;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       
       const pdf = new jsPDF({

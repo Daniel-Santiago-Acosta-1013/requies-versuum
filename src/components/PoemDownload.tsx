@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Download } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
@@ -7,7 +7,6 @@ import type { Poem } from '../types';
 interface PoemDownloadProps {
   poem: Poem;
 }
-
 export const PoemDownload = ({ poem }: PoemDownloadProps) => {
   const poemRef = useRef<HTMLDivElement>(null);
 
@@ -114,7 +113,7 @@ export const PoemDownload = ({ poem }: PoemDownloadProps) => {
         <div className="mt-12 pt-8 border-t border-[#8b7355]/20 text-center">
           <div className="text-[#8b7355]">
             <p className="font-serif italic">{poem.author}</p>
-            <p className="text-sm mt-2">{poem.category}</p>
+            <p className="text-sm mt-2">{poem.obra}</p>
           </div>
         </div>
       </div>

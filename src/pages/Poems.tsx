@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { SearchBar } from '../components/SearchBar';
 import { FilterBar } from '../components/FilterBar';
 import { PoemCard } from '../components/PoemCard';
@@ -18,7 +18,7 @@ export const Poems = () => {
         poem.content.toLowerCase().includes(searchTerm.toLowerCase()) ||
         poem.author.toLowerCase().includes(searchTerm.toLowerCase());
       
-      const matchesCategory = !selectedCategory || poem.category === selectedCategory;
+      const matchesCategory = !selectedCategory || poem.obra === selectedCategory;
       const matchesTag = !selectedTag || poem.tags.includes(selectedTag);
 
       return matchesSearch && matchesCategory && matchesTag;

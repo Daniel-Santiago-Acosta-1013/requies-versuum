@@ -1,12 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Tag, ArrowRight, User } from 'lucide-react';
 import { Poem } from '../types';
-
 interface PoemListItemProps {
   poem: Poem;
 }
-
 export const PoemListItem = ({ poem }: PoemListItemProps) => {
   return (
     <Link to={`/poem/${poem.id}`} className="block group">
@@ -18,7 +15,7 @@ export const PoemListItem = ({ poem }: PoemListItemProps) => {
           <div className="flex-1">
             <div className="flex items-center gap-4 mb-2">
               <span className="px-3 py-1 text-sm bg-[#8b7355]/10 dark:bg-github-muted/20 text-[#5c4b37] dark:text-github-default-dark rounded-full">
-                {poem.category}
+                {poem.obra}
               </span>
               <div className="flex items-center text-[#8b7355] dark:text-github-subtle-dark text-sm">
                 <Calendar className="w-4 h-4 mr-1" />

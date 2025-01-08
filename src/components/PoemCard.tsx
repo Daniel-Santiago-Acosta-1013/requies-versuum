@@ -1,12 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Tag, User } from 'lucide-react';
 import { Poem } from '../types';
-
 interface PoemCardProps {
   poem: Poem;
 }
-
 export const PoemCard = ({ poem }: PoemCardProps) => {
   return (
     <Link to={`/poem/${poem.id}`} className="block group">

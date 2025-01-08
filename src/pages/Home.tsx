@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { PoemCard } from '../components/PoemCard';
 import { SearchBar } from '../components/SearchBar';
 import { FilterBar } from '../components/FilterBar';
