@@ -3,6 +3,7 @@ import { SearchBar } from '../components/SearchBar';
 import { FilterBar } from '../components/FilterBar';
 import { PoemCard } from '../components/PoemCard';
 import { PoemListItem } from '../components/PoemListItem';
+import { TypewriterQuote } from '../components/TypewriterQuote';
 import { poems } from '../data/poems';
 import { LayoutGrid, List } from 'lucide-react';
 
@@ -27,6 +28,7 @@ export const Poems = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <TypewriterQuote />
       <div className="max-w-4xl mx-auto space-y-6 mb-12">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-serif text-[#4a3c2d] dark:text-github-default-dark">
